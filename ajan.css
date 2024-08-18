@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin: 20px;
+  line-height: 1.6;
+}
+
+
+/* สมมติว่ารูปภาพทั้งหมดอยู่ใน div ที่มี class ชื่อว่า "image-container" */
+{
+  display: flex;
+  flex-wrap: wrap; /* อนุญาตให้รูปภาพขึ้นบรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+  justify-content: center; /* จัดวางเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
+}
+
+{
+  width: 30%; /* ปรับขนาดความกว้างของรูปภาพ แต่ละรูปจะใช้พื้นที่ประมาณ 30% ของคอนเทนเนอร์ */
+  margin: 1.5%; /* เพิ่มระยะห่างระหว่างรูปภาพ */
+}
+
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+{
+  width: calc(33.33% - 2%); /* ปรับขนาดและระยะห่างตามต้องการ */
+  margin: 1%;
+}
+
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ปรับขนาดคอลัมน์ตามต้องการ */
+  justify-content: center;
+}
+
+{
+  width: 100%;
+  height: auto;
+}
+
